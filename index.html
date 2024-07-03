@@ -29,7 +29,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!--======================================CSS-LINKS====================================================-->
+    <!--======================================CSS-LINKS=====================================================-->
     <link rel="stylesheet" href="css/style.css" />
     <!--=========================================FONT-AWSOME-CSS-LINKS======================================-->
     <link
@@ -56,50 +56,20 @@
   </head>
   <body>
     <!--=======================================NAVIGATION-BAR-SECTION==============================================-->
-    <nav id="navigation" class="navbar navbar-expand-lg fixed-top">
-      <div class="container align-items-stretch">
-        <div class="logo">
-          <a class="navbar-brand" href="index.html">Hanoch</a>
-        </div>
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./htmlFiles/about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./htmlFiles/services.html">Services</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./htmlFiles/team.html">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./htmlFiles/contactus.html">Contacts</a>
-            </li>
-            <li id="get-started" class="nav-item">
-            <a class="nav-link" href="#aboutus">Get Started</a>
-          </li>
-          
-          </ul>
-        </div>
+  
+    <section class="navbar">
+     <a href="/index.html"> <div class="logo">Hanoch</div> </a>
+      <div class="nav-items">
+      <a href="#hero"> <button class="nav-button">Home</button></a>
+        <a href="#aboutus"> <button class="nav-button">About</button></a>
+       <a href="#services"> <button class="nav-button">Services</button></a>
+       <a href="#team"> <button class="nav-button">Team</button></a>
+        <a href="#contact">  <button class="nav-button">Contact</button></a>
       </div>
-    </nav>
-    <!--============================================BANNER-SECTION=================================================-->
+    </section>
+
+
+    <!--============================================BANNER-SECTION=====================================-->
     <section
       id="hero"
       class="d-flex align-items-center"
@@ -109,12 +79,12 @@
       <div class="container text-center">
         <h1>Hanoch</h1>
         <h2>Dedicated to Deliver</h2>
-        <a href="#aboutus" class="btn_get_started"> Get Started</a>
+        <a href="#services" class="btn_get_started"> Our Services</a>
       </div>
     </section>
 
-    <!--===========================================CLIENTS-SECTION===============================================================-->
-    <section class="clients">
+    <!--===========================================CLIENTS-SECTION====================================-->
+    <!-- <section class="clients">
       <div class="container">
         <div class="row">
           <div
@@ -204,7 +174,48 @@
       </div>
         </div>
       </div>
-    </section>
+    </section> -->
+  
+
+
+
+    <section class="client-section" id="clients"  data-aos="zoom-in"
+    data-aos-delay="100">
+      <h2><u><b>OUR CLIENTS</b></u></h2>
+      <div class="client-logos">
+      <img src="./img/client/1.png" alt="Client 1">
+      <img src="./img/client/2.png" alt="Client 2">
+      <img src="./img/client/3.png" alt="Client 3">
+      <img src="./img/client/4.png" alt="Client 4">
+      <img src="./img/client/5.png" alt="Client 5">
+      <img src="./img/client/6.png" alt="Client 6">
+      <img src="./img/client/7.png" alt="Client 7">
+      <img src="./img/client/8.png" alt="Client 8">
+      <img src="./img/client/9.png" alt="Client =9">
+      <img src="./img/client/10.png" alt="Client 10">
+      <img src="./img/client/11.png" alt="Client 11">
+      <img src="./img/client/12.png" alt="Client 12">
+      <img src="./img/client/13.png" alt="Client 13">
+      <img src="./img/client/14.png" alt="Client 14">
+      <img src="./img/client/15.png" alt="Client 15">
+      <img src="./img/client/1.png" alt="Client 1">
+      <img src="./img/client/2.png" alt="Client 2">
+      <img src="./img/client/3.png" alt="Client 3">
+      <img src="./img/client/4.png" alt="Client 4">
+      <img src="./img/client/5.png" alt="Client 5">
+      </div>
+    </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
     <!--==========================================ABOUTUS-SECTION=====================================================-->
     <section class="about" id="aboutus">
       <div class="container">
@@ -249,7 +260,7 @@
         </div>
       </div>
     </section>
-    <!--======================================COUNTER-SECTION===================================================-->
+    <!--======================================COUNTER-SECTION=============================================-->
     <section class="counts">
       <div class="container">
         <div class="row counters">
@@ -306,7 +317,7 @@
                 requirements.
               </p>
               <div class="text-center">
-                <a href="./htmlFiles/contactus.html" class="more_btn"
+                <a href="#services" class="more_btn"
                   >Learn more</a
                 >
               </div>
@@ -320,7 +331,7 @@
                   data-aos="zoom-in"
                   data-aos-delay="100"
                 >
-                  <div class="icon_box mt-4 mt-xl-0">
+                  <div class="icon_box mt-4 mt-xl-0 ">
                     <i class="fa fa-id-card-o"></i>
                     <h4>Our Values</h4>
                     <p>
@@ -366,18 +377,9 @@
         </div>
       </div>
     </section>
-  <!--=============================================CTA-SECTION===================================================-->
-    <section class="cta">
-      <div class="container">
-        <div class="text-center" data-aos="zoom-in">
-          <h3>Contact Us</h3>
-          <p>You Can Contact Us</p>
-          <a href="#contact" class="cta_btn">Call to action </a>
-        </div>
-      </div>
-    </section>
-    <!--===========================================SERVICES-SECTION===============================================-->
-    <section class="services section_bg">
+
+    <!--=======================================SERVICES-SECTION=====================================-->
+    <section class="services section_bg" id="services">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -442,7 +444,7 @@
         </div>
       </div>
     </section>
-    <!--============================================TESTIMONIAL-SECTION==============================================================-->
+    <!--======================================TESTIMONIAL-SECTION=========================================-->
     <section class="testimonial section_bg">
       <div class="container">
         <div class="row">
@@ -533,8 +535,8 @@
         </div>
       </div>
     </section>
-    <!--==========================================TEAM-SECTION==============================================================-->
-    <section class="team">
+    <!--=====================================TEAM-SECTION=============================================-->
+    <section class="team" id="team">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -638,7 +640,18 @@
         </div>
       </div>
     </section>
-    <!--===========================================CONTACT-SECTION=============================================-->
+
+      <!--====================================CTA-SECTION==============================================-->
+      <section class="cta">
+        <div class="container">
+          <div class="text-center" data-aos="zoom-in">
+            <h3>Contact Us</h3>
+            <p>You Can Contact Us</p>
+            <!-- <a href="#contact" class="cta_btn">Call to action </a> -->
+          </div>
+        </div>
+      </section>
+    <!--=========================================CONTACT-SECTION===========================================-->
     <section class="contact">
       <div class="container" id="contact">
         <div class="row">
@@ -746,7 +759,7 @@
         </div>
       </div>
     </section>
-    <!--==========================================FOOTER-SECTION================================================-->
+    <!--=============================FOOTER-SECTION=================================-->
     <footer id="footer">
       <div class="footer_top">
         <div class="footer_top">
@@ -759,7 +772,7 @@
                     Bengaluru<br />
                     Karnataka <br />560100<br /><br />
                     <strong>Phone:</strong> +91 9380460066<br />
-                    <strong> E-mail:</strong> info@hanoch.com
+                    <strong> E-mail:</strong> info@thehanoch.com
                   </p>
                 </div>
                 <div class="col-lg-2 col-md-6 footer_links">
@@ -811,8 +824,7 @@
                 <div class="col-lg-4 col-md-6 footer_newsletter">
                   <h4>Join our Newsletter</h4>
                   <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Quia, molestiae!
+                    Don't miss out! Subscribe to our newsletter for insider tips and special offers.
                   </p>
                   <form>
                     <input type="email" name=" email" />
@@ -843,15 +855,15 @@
         </div>
       </div>
     </footer>
-    <!--=======================================BACK-TO-TOP-SECTION==============================================-->
-    <a
+    <!--================================BACK-TO-TOP-SECTION====================================-->
+    <!-- <a
       href="#"
       class="back_to_top d-flex align-items-center justify-content-center"
     >
       <i class="fa fa-arrow-up"></i
-    ></a>
+    ></a> -->
 
-    <!--===================================JQUERY-JS-LINKS=======================================-->
+    <!--===================================JQUERY-JS-LINKS====================================-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -862,16 +874,16 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
-    <!--==================================SLICK-SLIDER-JS-LINKS===============================================-->
+    <!--==================================SLICK-SLIDER-JS-LINKS============================================-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
       integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!--========================================AOS-SCRIPT-LINKS========================================-->
+    <!--==================================AOS-SCRIPT-LINKS========================================-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!--==========================================JS-LINKS=======================================================-->
+    <!--=======================================JS-LINKS============================================-->
     <script type="text/javascript" src="/js/main.js"></script>
   </body>
 </html>

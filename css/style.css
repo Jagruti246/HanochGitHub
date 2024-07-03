@@ -70,6 +70,11 @@ section{
     padding:0.5rem 1rem;
     
 }
+.logo:hover{
+    background-color:rgb(30, 30, 141);
+    transform: scale(1.13);
+    transition: 0.2s  ease-in-out;
+}
 
 .nav-items {
     display: flex;
@@ -87,8 +92,40 @@ section{
 }
 
 .nav-button:hover {
-    background-color: lightblue;
+    background-color:rgb(30, 30, 141);
+    transform: scale(1.13);
+    transition: 0.2s  ease-in-out;
+
 } 
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-items a {
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-button {
+        width: 40%;
+        padding: 1rem;
+        text-align: center;
+        border-top: 1px solid #444;
+        border-bottom: 1px solid #444;
+    }
+
+    .nav-button:hover {
+        background-color:rgb(30, 30, 141);
+    }
+}
 
 
    

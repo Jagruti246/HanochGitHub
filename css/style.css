@@ -71,7 +71,7 @@ section{
     
 }
 .logo:hover{
-    background-color:rgb(30, 30, 141);
+    background-color:#03b8e1;
     transform: scale(1.13);
     transition: 0.2s  ease-in-out;
 }
@@ -92,7 +92,7 @@ section{
 }
 
 .nav-button:hover {
-    background-color:rgb(30, 30, 141);
+    background-color:#03b8e1;
     transform: scale(1.13);
     transition: 0.2s  ease-in-out;
 
@@ -123,7 +123,7 @@ section{
     }
 
     .nav-button:hover {
-        background-color:rgb(30, 30, 141);
+        background-color:#03b8e1;
     }
 }
 
@@ -183,7 +183,6 @@ section{
     border: 2px solid #0c96f3;
 }
 /*=================================CLIENT-CSS=========================================*/
-
 /* .clients{
     background-color: #f6f6f7;
     text-align: center;
